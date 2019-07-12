@@ -37,7 +37,7 @@ function MovieDetails({ movie }) {
   return (
     <div className="movie-card">
       {/* linking movie card to its individual id */}
-      <Link to = {"/movies/${props.match.params.id}"}>
+      <Link to = {`/movies/${movie.id}`}>
       <h2>{title}</h2>
       <div className="movie-director">
         Director: <em>{director}</em>
